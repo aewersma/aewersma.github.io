@@ -1,0 +1,34 @@
+body {
+    background-color: white;
+    color: black;
+}
+.papyrus {
+    font-family: Papyrus, fantasy;
+}
+
+.yellow {
+    color: yellow;
+}
+.white {
+    color: white;
+}
+.center {
+    text-align: center;
+}
+
+.huge {
+    font-size: xx-large;
+    margin: 10px;
+}
+.comic {
+    font-family: "Comic Sans MS", cursive;
+}
+.times {
+    font-family: Times, serif;
+}
+.border {
+    border-top: 10px solid red;
+    border-right: 15px dotted blue;
+    border-bottom: 20px dashed green;
+    border-left: 25px double purple;
+}
