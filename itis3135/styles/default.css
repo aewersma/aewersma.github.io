@@ -21,7 +21,9 @@ h2{
     text-align: center;
 }
 img{
-    width:100%;
+    width: 400px;
+    height: auto;
+    max-width: 100%;
 }
 figure{
     text-align: center;
