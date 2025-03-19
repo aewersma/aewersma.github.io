@@ -43,7 +43,6 @@ main {
 }
 section {
     display: none;
-    width: 80%;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
