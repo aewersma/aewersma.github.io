@@ -6,6 +6,17 @@ body {
     padding: 0;
     text-align: center;
 }
+
+a {
+    color: #0060c0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0381ff;
+    text-decoration: underline;
+}
+
 header {
     background-color: #003366;
     color: white;
