@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Ewersmann's Anxious Elk || ITIS 3135 || HTML Tables</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main>
+    <h2>HTML Tables</h2>
+    <h3>My Tabular Data</h3>
+    <ol>
+      <li>D.I. von Briesen | dvonbri1@uncc.edu | 1</li>
+      <li>Esam Abdullah | eabdullah@gmail.com | 31</li>
+      <li>Medina Gomez | gomez_med8@yahoo.com | 3</li>
+      <li>Arthur Ewersmann | aewersmann@gmail.com | 2</li>
+      <li>Jack Worth | jwenterprises@protonmail.com | 5</li>
+      <li>William Barnes | BarnesInc7@gmail.com | 3</li>
+      <li>Melanie Martinez | bestsinger9900@outlook.com | 2</li>
+    </ol>
+    <h3>Employee Data in Simple Table</h3>
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Email</th>
+          <th scope="col">Experience (years)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>D.I. von Briesen</td>
+          <td>dvonbri1@uncc.edu</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Esam Abdullah</td>
+          <td>eabdullah@gmail.com</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>Medina Gomez</td>
+          <td>gomez_med8@yahoo.com</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Arthur Ewersmann</td>
+          <td>aewersmann@gmail.com</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Jack Worth</td>
+          <td>jwenterprises@protonmail.com</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>William Barnes</td>
+          <td>BarnesInc7@gmail.com</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Melanie Martinez</td>
+          <td>bestsinger9900@outlook.com</td>
+          <td>2</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Employee Data in Complex Table</h3>
+    <figure>
+      <table>
+        <thead>
+          <tr>
+            <th id="cat" scope="col">Category</th>
+            <th id="name" scope="col">Name</th>
+            <th id="email" scope="col">Email</th>
+            <th id="exp" scope="col">Experience (years)</th>
+            <th id="salary" scope="col">Monthly Salary</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2" headers="cat">Heads</td>
+            <td headers="name">D.I. von Briesen</td>
+            <td headers="email">dvonbri1@uncc.edu</td>
+            <td headers="exp">1</td>
+            <td headers="salary">$12,000</td>
+          </tr>
+          <tr>
+            <td headers="name">Esam Abdullah</td>
+            <td headers="email">eabdullah@gmail.com</td>
+            <td headers="exp">31</td>
+            <td headers="salary">$9,000</td>
+          </tr>
+          <tr>
+            <td rowspan="2" headers="cat">Consultants</td>
+            <td headers="name">Medina Gomez</td>
+            <td headers="email">gomez_med8@yahoo.com</td>
+            <td headers="exp">3</td>
+            <td headers="salary">$9,900</td>
+          </tr>
+          <tr>
+            <td headers="name">Arthur Ewersmann</td>
+            <td headers="email">aewersmann@gmail.com</td>
+            <td headers="exp">2</td>
+            <td headers="salary">$5,100</td>
+          </tr>
+          <tr>
+            <td rowspan="3" headers="cat">Managers</td>
+            <td headers="name">Jack Worth</td>
+            <td headers="email">jwenterprises@protonmail.com</td>
+            <td headers="exp">5</td>
+            <td headers="salary">$10,200</td>
+          </tr>
+          <tr>
+            <td headers="name">William Barnes</td>
+            <td headers="email">BarnesInc7@gmail.com</td>
+            <td headers="exp">3</td>
+            <td headers="salary">$4,000</td>
+          </tr>
+          <tr>
+            <td headers="name">Melanie Martinez</td>
+            <td headers="email">bestsinger9900@outlook.com</td>
+            <td headers="exp">2</td>
+            <td headers="salary">$7,800</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th id="total" colspan="3">Total Years of Service</th>
+            <td headers="exp">47</td>
+            <td headers="salary">$105,000</td>
+          </tr>
+        </tfoot>
+      </table>
+      <figcaption><em>Employee Information</em></figcaption>
+    </figure>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+  </script>
+</body>
+</html>

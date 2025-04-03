@@ -37,6 +37,38 @@ figure {
     font-style: oblique;
 }
 
+h3 {
+  margin-top: 32px;
+}
+
+ol {
+  margin-left: 20px;
+}
+
+table {
+  width: 80%;
+  margin: 10px auto;
+  border-collapse: collapse;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+th, td {
+  padding: 8px 12px;
+  border: 1px solid #333;
+  text-align: left;
+  background-color: #f2f2f2;
+  color: #333333;
+}
+
+figure table,
+figure thead,
+figure tbody tr,
+figure tfoot {
+    background-color: #f2f2f2;
+    color: #333333;
+}
+
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     body {
