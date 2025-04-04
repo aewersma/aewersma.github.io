@@ -9,7 +9,7 @@
     <script>
         function showSection(sectionId) {
             let sections = document.querySelectorAll('section');
-            sections.forEach(section => section.style.display = 'none');
+            sections.forEach((section => section.style.display) = 'none');
             document.getElementById(sectionId).style.display = 'block';
         }
         document.addEventListener("DOMContentLoaded", function() {
@@ -50,7 +50,7 @@
     
     <section id="sitemap">
         <h2>Site Map</h2>
-        <p>Below is a wireframe representation of the site structure using .</p>
+        <p>Below is a wireframe representation of the site structure using Draw.io:</p>
         <figure>
             <img src="images/sitemap.png" alt="Site Map">
             <figcaption>Visual representation of website navigation</figcaption>
