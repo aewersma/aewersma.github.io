@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Overview</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <script>
+        function showSection(sectionId) {
+            let sections = document.querySelectorAll('section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+        document.addEventListener("DOMContentLoaded", function() {
+            showSection('overview');
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Interactive Web Application Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('overview')">Project Overview</a></li>
+                <li><a href="#" onclick="showSection('client')">Client Information</a></li>
+                <li><a href="#" onclick="showSection('sitemap')">Site Map</a></li>
+                <li><a href="#" onclick="showSection('design')">Page Design</a></li>
+                <li><a href="#" onclick="showSection('functionality')">Dynamic Functionality</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="overview">
+        <h2>Project Overview</h2>
+        <p>This web application is designed to help promote a unique game server experience in the video game, Minecraft.</p>
+        <h3>Intended Users</h3>
+        <p>People interested in learning about the server, players who actively play the server, and staff members and moderators.</p>
+        <h3>Content Overview</h3>
+        <p>The website will include event listings, a faction directory, coordinates and more information, and a contact form for inquiries.</p>
+    </section>
+    
+    <section id="client">
+        <h2>Client Information</h2>
+        <p><strong>Name:</strong> Daniel Diaz</p>
+        <p><strong>Organization:</strong> Renaissancecraft Minecraft Server</p>
+        <p><strong>Email:</strong> eastwallhill@outlook.com</p>
+        <p><strong>Phone:</strong> 818-723-4713</p>
+    </section>
+    
+    <section id="sitemap">
+        <h2>Site Map</h2>
+        <p>Below is a wireframe representation of the site structure.</p>
+        <figure>
+            <img src="sitemap.png" alt="Site Map">
+            <figcaption>Visual representation of website navigation</figcaption>
+        </figure>
+    </section>
+    
+    <section id="design">
+        <h2>Page Design</h2>
+        <ul>
+            <li><strong>Home Page:</strong> Introduction and highlights.</li>
+            <li><strong>Events Page:</strong> Displays upcoming events.</li>
+            <li><strong>Members Page:</strong> List of official player factions.</li>
+            <li><strong>Contact Page:</strong> Contact form for inquiries.</li>
+            <li><strong>Gallery Page:</strong> Collection of player and promotional screenshots.</li>
+        </ul>
+    </section>
+    
+    <section id="functionality">
+        <h2>Dynamic Functionality</h2>
+        <p>The website will include an interactive event calendar, a photo gallery, and AJAX-powered event searches.</p>
+        <p>Example of similar functionality: <a href="https://www.eventbrite.com" target="_blank">Eventbrite</a></p>
+    </section>
+    
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script src="scripts/HTMLInclude.min.js"></script>
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+</body>
+</html>

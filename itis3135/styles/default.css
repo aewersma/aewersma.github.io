@@ -38,27 +38,31 @@ figure {
 }
 
 h3 {
-  margin-top: 32px;
+    margin-top: 32px;
 }
 
-ol {
-  margin-left: 20px;
+ul, ol {
+    display: inline-block;
+    text-align: left;
+    list-style-position: inside;
+    margin: 0;
+    padding: 0;
 }
 
 table {
-  width: 80%;
-  margin: 10px auto;
-  border-collapse: collapse;
-  background-color: #f2f2f2;
-  color: #333333;
+    width: 80%;
+    margin: 10px auto;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+    color: #333333;
 }
 
 th, td {
-  padding: 8px 12px;
-  border: 1px solid #333;
-  text-align: left;
-  background-color: #f2f2f2;
-  color: #333333;
+    padding: 8px 12px;
+    border: 1px solid #333;
+    text-align: left;
+    background-color: #f2f2f2;
+    color: #333333;
 }
 
 figure table,
@@ -69,21 +73,18 @@ figure tfoot {
     color: #333333;
 }
 
-/* Rule Overrides For Laptops / Small Screens */
 @media screen and (min-width: 981px) and (max-width: 1400px) {
     body {
         background-color: #444;
     }
 }
 
-/* Rule Overrides For Tablet Devices */
 @media screen and (min-width: 601px) and (max-width: 980px) {
     body {
         background-color: #666;
     }
 }
 
-/* Rule Overrides For Mobile Devices */
 @media screen and (max-width: 600px) {
     body {
         background-color: #888;
