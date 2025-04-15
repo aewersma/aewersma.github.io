@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYO Intro</title>
+  <link rel="stylesheet" href="styles/default.css">
+  <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div data-include="components/header.html"></div>
+  </header>
+  <main>
+    <h2>BYO Intro</h2>    
+    <form id="introductionForm">
+      <p class="basic-information-row">
+        <span class="basic-information">
+          <label for="firstName">First Name</label><br>
+          <input type="text" id="firstName" name="firstName" value="Arthur" required>
+        </span>
+        <span class="basic-information">
+          <label for="middleInitial">Middle Initial</label><br>
+          <input type="text" id="middleInitial" name="middleInitial" placeholder="A" maxlength="1">
+        </span>
+        <span class="basic-information">
+          <label for="lastName">Last Name</label><br>
+          <input type="text" id="lastName" name="lastName" value="Ewersmann" required>
+        </span>
+        <span class="basic-information">
+          <label for="nickname">Nickname</label><br>
+          <input type="text" id="nickname" name="nickname" placeholder="Art">
+        </span>
+        <span class="basic-information">
+          <label for="mascot">Mascot</label><br>
+          <input type="text" id="mascot" name="mascot" value="Anxious Elk" required>
+        </span>
+      </p>
+      
+      <p>
+        <label for="image">Image (PNG or JPG)</label><br>
+        <input type="file" id="image" name="image" accept="image/png, image/jpeg">
+      </p>
+      
+      <img id="previewImage" src="images/Image002.png" alt="Arthur_Ewersmann_ID" class="image-preview">
+      
+      <p class="image-information-row">
+        <span class="image-information">
+          <label for="imageAlt">Image Alt Text</label><br>
+          <input type="text" id="imageAlt" name="imageAlt" value="Arthur_Ewersmann_ID" required>
+        </span>
+        <span class="image-information">
+          <label for="imageCaption">Image Caption</label><br>
+          <input type="text" id="imageCaption" name="imageCaption" value="As I appear on my university ID" required>
+        </span>
+      </p>
+      
+      <p>
+        <label for="personalBackground">Personal Background</label><br>
+        <textarea id="personalBackground" name="personalBackground" rows="2" required>
+Commuting from Kannapolis, NC. Lived in NC and SC my entire life.
+        </textarea>
+      </p>
+      
+      <p>
+        <label for="professionalBackground">Professional Background</label><br>
+        <textarea id="professionalBackground" name="professionalBackground" rows="2" required>
+No job experience yet in the computer science field, but actively looking for an internship and have completed many web development projects for TSA (technology student association) back in high school.
+        </textarea>
+      </p>
+      
+      <p>
+        <label for="academicBackground">Academic Background</label><br>
+        <textarea id="academicBackground" name="academicBackground" rows="2" required>
+Graduated with a STEM degree from Northwest Cabarrus High School. Currently in Computer Science with a concentration in Cybersecurity. Also doing a minor in Security and Intelligence Studies. Former president of the Cabarrus County Cyberpatriot division, NW Robotics team leader.
+        </textarea>
+      </p>
+      
+      <p>
+        <label for="subjectBackground">Background in this subject</label><br>
+        <textarea id="subjectBackground" name="subjectBackground" rows="2" required>
+Self-taught HTML, some CSS, and some Javascript in middle school.
+        </textarea>
+      </p>
+      
+      <p>
+        <label for="primaryPlatform">Primary Computer Platform</label><br>
+        <input type="text" id="primaryPlatform" name="primaryPlatform" value="Linux (Fedora 40 Desktop)" required>
+      </p>
+      
+      <div class="courses-section">
+        <p>Courses Currently Taking</p>
+        <ul id="courses-container"></ul>
+        <button type="button" id="course-btn">Add Course</button>
+      </div>
+      
+      <p>
+        <label for="funnyThing">Funny/Interesting item about yourself</label><br>
+        <textarea id="funnyThing" name="funnyThing" placeholder="Funny thing about you" rows="2">
+I’m the popcorn guy at a movie theatre (if you’re ever in Kannapolis visiting the Gem Theatre, say hi). I build home servers as a hobby, and I’m also a huge fan of architecture and exterior design.
+        </textarea>
+      </p>
+      
+      <p>
+        <label for="anythingElse">I'd also like to share</label><br>
+        <textarea id="anythingElse" name="anythingElse" placeholder="Any other interesting thing you'd like to add" rows="2">
+I’m one of those kinds of people with their laptop completely plastered in stickers
+        </textarea>
+      </p>
+      
+      <p>
+        <input type="checkbox" id="agreement" name="agreement" required checked>
+        <label for="agreement">I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available.</label>
+      </p>
+      
+      <input type="submit" class="buttons" value="Submit">
+      <input type="reset" class="buttons" value="Reset">
+    </form>
+    
+    <div id="resultSection" style="display: none;"></div>
+    <br>
+  </main>
+  <footer>
+    <div data-include="components/footer.html"></div>
+  </footer>
+  <script src="scripts/HTMLInclude.min.js"></script>
+  <script>
+    document.getElementById("validation_link_html").setAttribute("href", "https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+  </script>
+  <script src="scripts/survey.js"></script>
+</body>
+</html>
