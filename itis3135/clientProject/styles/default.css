@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+/* https://coolors.co/e5d4ed-6d72c3-5941a9-514f59-1d1128 */
+
+
+body {
+    font-family: "Roboto Flex", serif;
+    background-color: #e5d4ed;
+    color: #1d1128;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #41a960;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    max-width: 100%;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 1.8rem;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #000000;
+}
+
+.custom-bullets {
+    list-style: none;
+    padding: 0;
+    color: #ffffff00;
+}
+
+.custom-bullets li {
+    background: #6dc381;
+    color: #ffffff00;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.contact-info {
+    background-color: #2f2f2f;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #2f2f2f;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
