@@ -133,3 +133,202 @@ section:target {
     color: #2566a8;
     text-decoration: none;
 }
+
+.banner {
+  width: 10%; 
+  height: 10%; 
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  border-radius: 8px;
+}
+
+table.calendar {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table.calendar th,
+table.calendar td {
+  border: 1px solid #12263A;
+  vertical-align: top;
+  padding: 5px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+table.calendar .date {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+table.calendar .event {
+  background-color: #41a960;
+  color: #fff;
+  padding: 2px 4px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  font-size: 0.85em;
+}
+
+table.calendar {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table.calendar th,
+table.calendar td {
+  width: 14.2857%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+}
+
+main form {
+  max-width: 600px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #41a960;
+  box-shadow: 0 0 0 3px rgba(65, 169, 96, 0.2);
+}
+
+button[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 0.85rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #41a960;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+  background-color: #369e50;
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+#formStatus {
+  text-align: center;
+  margin-top: 1rem;
+  font-style: italic;
+  color: #2d7dd2;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+  box-sizing: border-box;
+}
+
+.carousel {
+  position: relative;
+  max-width: 600px;
+  margin: 2rem auto;
+  overflow: hidden;
+}
+
+.carousel__track-container {
+  overflow: hidden;
+}
+
+.carousel__track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel__slide img {
+  width: 85%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  background: rgba(0,0,0,0.4);
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+.carousel__btn:first-of-type {
+  left: 10px;
+}
+
+.carousel__btn:last-of-type {
+  right: 10px;
+}
+
+.carousel__nav {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.carousel__indicator {
+  border: none;
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.carousel__indicator.current-slide {
+  background-color: #41a960;
+}
